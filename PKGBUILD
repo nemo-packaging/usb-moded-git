@@ -1,16 +1,17 @@
 ## $Id$
 # Maintainer: TheKit <nekit1000 at gmail.com>
+# Contributor: Alexey Andreyev <aa13q@ya.ru>
 # Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
 
 _pkgname=usb-moded
 pkgname=usb-moded-git
-pkgver=0.86.0+mer40.r0.gc0302c8
+pkgver=0.86.0+mer40.r2.gb6c50d4
 pkgrel=1
 pkgdesc="Mer USB mode controller"
 arch=('x86_64' 'aarch64')
 url="https://git.sailfishos.org/mer-core/usb-moded"
 license=('GPL')
-depends=('connman' 'dbus' 'udev' 'kmod' 'ssu-sysinfo' 'sailfish-access-control')
+depends=('libdsme' 'dbus-glib' 'udev' 'kmod' 'ssu-sysinfo' 'sailfish-access-control')
 makedepends=('git')
 provides=("${pkgname%-git}")
 conflicts=("${pkgname%-git}")
